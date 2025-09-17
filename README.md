@@ -39,5 +39,4 @@ Extienda el ejercicio anterior para que sea posible cargar varios diccionarios s
   - Mostrar todos los alumnos
   - Mostrar todos los alumnos y su promedio de notas
   - Mostrar todos los alumnos
-
-Mostrar todos los alumnos y su promedio de notas
+  - Mostrar todos los alumnos y su promedio de notas
