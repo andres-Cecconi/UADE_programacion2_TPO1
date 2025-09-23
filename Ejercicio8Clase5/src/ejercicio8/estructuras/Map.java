@@ -8,8 +8,8 @@ public interface Map<K, V> {
     V put(K key, V value); // Asocia la clave con el valor, devolviendo el valor previo o null.
     V remove(K key); // Elimina la clave y devuelve su valor, o null si no existía.
 
-    // Cambiado para devolver un Iterador directamente para mayor simplicidad.
-    java.util.Iterator<K> keys();
-    java.util.Iterator<V> values();
-    java.util.Iterator<Entry<K, V>> entries();
+    List<K> keys(); // Devuelve una lista de todas las claves en el diccionario.
+    List<V> values(); // Devuelve una lista de todos los valores en el diccionario.
+    List<Entry<K, V>> entries(); // Devuelve una lista de todas las entradas (pares clave-valor) en el diccionario.
+    void clear(); // Elimina todos los pares clave-valor del diccionario.
 }

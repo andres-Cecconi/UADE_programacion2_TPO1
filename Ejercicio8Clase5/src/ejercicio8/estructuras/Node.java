@@ -1,8 +1,9 @@
 package ejercicio8.estructuras;
 
+// Nodo para una estructura enlazada simple.
 public class Node<E> {
-    private E element;
-    private Node<E> next;
+    private E element; // El elemento almacenado en el nodo.
+    private Node<E> next; // Referencia al siguiente nodo en la secuencia.
 
     public Node(E element, Node<E> next) {
         if (element == null) {
@@ -12,7 +13,15 @@ public class Node<E> {
         this.next = next;
     }
 
-    public E getElement() { return element; }
-    public Node<E> getNext() { return next; }
-    public void setNext(Node<E> next) { this.next = next; }
+    public E getElement() { 
+        return this.element; 
+    }
+
+    public Node<E> getNext() { 
+        return this.next; 
+    }
+    
+    public void setNext(Node<E> next) { 
+        this.next = next; 
+    }
 }

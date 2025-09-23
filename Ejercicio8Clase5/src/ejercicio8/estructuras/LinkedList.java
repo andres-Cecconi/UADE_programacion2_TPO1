@@ -1,7 +1,5 @@
 package ejercicio8.estructuras;
 
-import java.util.NoSuchElementException;
-
 // Implementación de una Lista utilizando una estructura enlazada simple.
 public class LinkedList<E> implements List<E> {
     private Node<E> head; // Puntero al primer nodo de la lista.
@@ -9,6 +7,18 @@ public class LinkedList<E> implements List<E> {
 
     public int size() { return size; }
     public boolean isEmpty() { return size == 0; }
+
+    @Override
+    public E get(int index) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Índice fuera de rango: " + index);
+        }
+        Node<E> current = head;
+        for (int i = 0; i < index; i++) {
+            current = current.getNext();
+        }
+        return current.getElement();
+    }
 
     // Añade un elemento al final de la lista.
     public void addLast(E element) {
@@ -71,27 +81,5 @@ public class LinkedList<E> implements List<E> {
         
         System.out.println("[DEBUG][LinkedList] REMOVE falló. Elemento no encontrado.");
         return null; // El elemento no fue encontrado en la lista.
-    }
-
-    // Devuelve un iterador para poder recorrer la lista de forma sencilla (for-each).
-    // Este método es requerido por la interfaz Iterable<E> que List<E> extiende.
-    @Override
-    public java.util.Iterator<E> iterator() {
-        return new java.util.Iterator<E>() {
-            private Node<E> current = head;
-
-            public boolean hasNext() {
-                return current != null;
-            }
-
-            public E next() {
-                if (!hasNext()) {
-                    throw new java.util.NoSuchElementException("No hay más elementos en la lista");
-                }
-                E element = current.getElement();
-                current = current.getNext();
-                return element;
-            }
-        };
     }
 }

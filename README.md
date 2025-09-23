@@ -6,18 +6,9 @@
   - Podesta Jeronimo
   - Veis Andrei
 
-El primer trabajo práctico consta en entregar los siguientes ejercicios de clase:
-
-- Clase 3 Ejercicio 7
-- Clase 4 Ejercicio 4
-- Clase 5 Ejercicio 8
 
 Debajo, a modo de anexo, se colocan los enunciados para evitar confusiones (son los mismos que fueron propuestos para cada clase).
 Cada grupo debe entregar un proyecto por ejercicio, consolidado en un único archivo comprimido “TPO1-GRUPO X.zip” (X es el nombre/número del grupo) que contiene las 3 carpetas que corresponden a los 3 proyectos solicitados. La entrega la realiza un único integrante del grupo (enviar un solo correo), poniendo en copia a todos sus compañeros, por mail a wgomez@uade.edu.ar con el asunto TPO1-GRUPO X-2025-2C.
-
-# La fecha de entrega es 23/09/2025.
-
-Obs: El archivo puede ser bloqueado por razones de seguridad al momento de enviar el correo, esto se debe a los ejecutables que se encuentran dentro de las carpetas “bin” de los proyectos, en caso de ser necesario, se puede vaciar el contenido de dichas carpetas. Como última instancia, se puede realizar la entrega mediante teams, siempre respetando el formato indicado previamente.
 
 
 # Clase 3 Ejercicio 7
